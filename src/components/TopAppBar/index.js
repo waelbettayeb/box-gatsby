@@ -31,13 +31,13 @@ function TopAppBar(props) {
                       {t('home')}
                       <Link to="/" getProps={isPartiallyActive("/")}  {...props}/>
                   </Menu.Item>
-                  <Menu.Item key="/services">{t('services')}
+                  <Menu.Item key="/services">{t('services.name')}
                       <Link to="/services" getProps={isPartiallyActive("/services")} {...props}/>
                   </Menu.Item>
                   <Menu.Item key="/about-us">{t('about')}
                       <Link to="/about-us" getProps={isPartiallyActive("/about-us")} {...props}/>
                   </Menu.Item>
-                  <Menu.Item key="/blog">{t('blog')}
+                  <Menu.Item key="/blog">{t('blog.name')}
                       <Link to="/blog" getProps={isPartiallyActive("/blog")} {...props}/>
                   </Menu.Item>
               </Menu>
