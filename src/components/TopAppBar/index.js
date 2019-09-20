@@ -1,14 +1,12 @@
 import React, { useState } from "react"
-import {Col, Icon, Menu, Row, Typography} from "antd";
-import {useTranslation} from "react-i18next";
-import ResponsiveAntMenu from "../ResponsiveMenu";
+import { Col, Icon, Menu, Row } from "antd"
+import { useTranslation } from "react-i18next"
+import ResponsiveAntMenu from "../ResponsiveMenu"
 import { Link } from "gatsby"
 
-const { Title, Paragraph, Text } = Typography;
 
 function TopAppBar(props) {
-    const { classes } = props;
-    const { t, i18n } = useTranslation('common');
+    const { t } = useTranslation('common');
     const [key, setKey] = useState("/");
     const handleClick  = e => {
         console.log('click ', e);
@@ -32,6 +30,9 @@ function TopAppBar(props) {
                   <Menu.Item key="/">
                       {t('home')}
                       <Link to="/" getProps={isPartiallyActive("/")}  {...props}/>
+                  </Menu.Item>
+                  <Menu.Item key="/services">{t('services')}
+                      <Link to="/services" getProps={isPartiallyActive("/services")} {...props}/>
                   </Menu.Item>
                   <Menu.Item key="/about-us">{t('about')}
                       <Link to="/about-us" getProps={isPartiallyActive("/about-us")} {...props}/>

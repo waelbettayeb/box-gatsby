@@ -1,7 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Index from "../layouts"
 import SEO from "../components/seo"
 
 const AboutUsPage = () => (

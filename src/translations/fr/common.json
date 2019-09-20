@@ -1,0 +1,49 @@
+{
+  "welcome": {
+    "title": "Bienvenue à {{name}}",
+    "description": "To get started, edit <1><0></0></1> and save to reload."
+  },
+  "home": "Accueil",
+  "about": "À propos de nous",
+  "blog": {
+    "name": "Blog",
+    "description": "blog description"
+  },
+  "contactUs": "Contactez-nous",
+  "learnMore": "En savoir plus",
+  "whoTrustUs": "Qui nous fait confiance",
+  "feature": "Fonctionnalité",
+  "services": {
+    "name": "Services",
+    "description": "services description"
+  },
+  "animCom":{
+    "name": "Animation commerciale",
+    "iconType": "medium",
+    "description": "bla bla"
+  },
+  "comGlob":{
+    "name": "Communication globale",
+    "iconType": "arrows-alt"
+  },
+  "comMed":{
+    "name": "Communication Media",
+    "iconType": "api"
+  },
+  "strMarket":{
+    "name": "Stratégie Marketing",
+    "iconType": "like"
+  },
+  "webApp":{
+    "name": "Web et Applications",
+    "iconType": "code"
+  },
+  "designEnv":{
+    "name": "Design et Environnement",
+    "iconType": "edit"
+  },
+  "comEvent":{
+    "name": "Communication Événementielle",
+    "iconType": "calendar"
+  }
+}

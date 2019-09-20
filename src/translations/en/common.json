@@ -1,0 +1,15 @@
+{
+  "welcome": {
+    "title": "Welcome to {{name}}",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis lorem. Etiam fringilla iaculis ante, id suscipit urna rhoncus ut. Suspendisse elit tellus, vulputate sed placerat nec, sollicitudin sodales tortor. Fusce dignissim, risus ac porta aliquam, ipsum turpis facilisis neque, et rhoncus ante elit a elit. Nam et elit felis. In hac habitasse platea dictumst."
+  },
+  "home": "Home",
+  "about": "About",
+  "blog": "Blog",
+  "portfolio": "Portfolio",
+  "learnMore": "Learn more",
+  "whoTrustUs": "Who trust us",
+  "feature": "Feature",
+  "services": "Services"
+
+}
