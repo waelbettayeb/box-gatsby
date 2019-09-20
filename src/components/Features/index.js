@@ -22,7 +22,7 @@ export default (props) => {
     <BottomParallaxSection title={props.title}
                            paragraph={props.paragraph}
                            linkButton={{text:<Link to="/services">{t('learnMore')}</Link> }}
-                           background={'white'}
+                           background={"#f5f5f5"}
     >
       {
         data.allServicesJson.nodes.map(( node ) => (

@@ -28,6 +28,7 @@ function Home(props) {
         />
         <Features title={t('services.name')}
                   paragraph={t('services.description')}
+                  background={"black"}
                   linkButton={{text:t('learnMore'), link: ""}}/>
 
         <Row type={'flex'} align={'space-around'} >
