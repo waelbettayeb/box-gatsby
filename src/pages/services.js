@@ -6,7 +6,7 @@ import { Col, Row, Typography } from "antd"
 import { useTranslation } from "react-i18next"
 const { Title, Paragraph, Text } = Typography;
 
-const AboutUsPage = () => {
+const ServicesPage = () => {
   const {t} = useTranslation('common');
   const data = useStaticQuery(graphql`
       query {
@@ -45,4 +45,4 @@ const AboutUsPage = () => {
 }
 
 
-export default AboutUsPage
+export default ServicesPage
