@@ -55,5 +55,9 @@
   "jilShirt": {
     "description": "jilshirt description",
     "link": "https://jilshirt.com"
+  },
+  "pageNotFound": {
+    "title": "Page non trouvée",
+    "description": "Sorry"
   }
 }
