@@ -14,10 +14,10 @@ function TopAppBar(props) {
         console.log('click ', e);
         setKey(e.key);
     };
-    const isPartiallyActive = ({ isPartiallyCurrent, to}) => {
-        console.log('click ', isPartiallyCurrent);
-
-    }
+    const isPartiallyActive = to => (({ isPartiallyCurrent}) => {
+        if(isPartiallyCurrent)
+            setKey(to);
+    })
     const menu = pMode =>{
         return <ResponsiveAntMenu
           mobileMenuContent={isMenuShown =>  <Icon type="menu" rotate={isMenuShown ? 90 : 0}/>}
@@ -31,13 +31,13 @@ function TopAppBar(props) {
               >
                   <Menu.Item key="/">
                       {t('home')}
-                      <Link to="/" getProps={isPartiallyActive}/>
+                      <Link to="/" getProps={isPartiallyActive("/")}  {...props}/>
                   </Menu.Item>
                   <Menu.Item key="/about-us">{t('about')}
-                      <Link to="/about-us" getProps={isPartiallyActive}/>
+                      <Link to="/about-us" getProps={isPartiallyActive("/about-us")} {...props}/>
                   </Menu.Item>
                   <Menu.Item key="/blog">{t('blog')}
-                      <Link to="/blog" getProps={isPartiallyActive}/>
+                      <Link to="/blog" getProps={isPartiallyActive("/blog")} {...props}/>
                   </Menu.Item>
               </Menu>
             }
