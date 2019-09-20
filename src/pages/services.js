@@ -10,7 +10,7 @@ const ServicesPage = () => {
   const {t} = useTranslation('common');
   const data = useStaticQuery(graphql`
       query {
-          file(relativePath: { eq: "images/about-us.png" }) {
+          file(relativePath: { eq: "images/services.png" }) {
               childImageSharp {
                   # Specify a fixed image and fragment.
                   # The default width is 400 pixels
@@ -30,7 +30,7 @@ const ServicesPage = () => {
         </Row>
         <Row type={'flex'} justify={'center'}>
           <Title style={{textAlign:'center', margin:"20px"}} level={"3"}>
-            {t('about')}
+            {t('services.name')}
           </Title>
         </Row>
         <Row type={'flex'} justify={'center'}>
