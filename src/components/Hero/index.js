@@ -3,6 +3,8 @@ import HorizontalParallaxSection from "../ParallaxSection/HorizontalParallaxSect
 // import Img from 'react-image'
 import {Button, Col, Divider, Row, Typography} from "antd";
 import {useTranslation} from "react-i18next";
+import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -12,6 +14,20 @@ const padding = 60;
 function Hero(props) {
     const {t} = useTranslation('common');
     let pButton, sButton, divider;
+    const data = useStaticQuery(graphql`
+        query {
+            file(relativePath: { eq: "images/hero.png" }) {
+                childImageSharp {
+                    # Specify a fixed image and fragment.
+                    # The default width is 400 pixels
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    `)
+
     if(props.primaryButton){
         pButton = <Col span={13}>
             <Button type="primary"
@@ -58,7 +74,7 @@ function Hero(props) {
                 </Row>
             </Col>
             <Col md={14} lg={12}>
-                {/*<Img src={props.src} style={{width:'100%'}}/>*/}
+                <Img fixed={data.file.childImageSharp.fixed} fluid={data.file.childImageSharp.fluid}  style={{width:'100%'}}/>
             </Col>
         </HorizontalParallaxSection>
     );
