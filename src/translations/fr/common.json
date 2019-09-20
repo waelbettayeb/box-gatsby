@@ -1,10 +1,10 @@
 {
-  "welcome": {
-    "title": "Bienvenue à {{name}}",
-    "description": "To get started, edit <1><0></0></1> and save to reload."
-  },
   "home": "Accueil",
   "about": "À propos de nous",
+  "welcome": {
+    "title": "Let's move your make",
+    "description": "To get started, edit <1><0></0></1> and save to reload."
+  },
   "blog": {
     "name": "Blog",
     "description": "blog description"
@@ -24,26 +24,36 @@
   },
   "comGlob":{
     "name": "Communication globale",
-    "iconType": "arrows-alt"
+    "iconType": "arrows-alt",
+    "description": "bla bla"
   },
   "comMed":{
     "name": "Communication Media",
-    "iconType": "api"
+    "iconType": "api",
+    "description": "bla bla"
   },
   "strMarket":{
     "name": "Stratégie Marketing",
-    "iconType": "like"
+    "iconType": "like",
+    "description": "bla bla"
   },
   "webApp":{
     "name": "Web et Applications",
-    "iconType": "code"
+    "iconType": "code",
+    "description": "bla bla"
   },
   "designEnv":{
     "name": "Design et Environnement",
-    "iconType": "edit"
+    "iconType": "edit",
+    "description": "bla bla"
   },
   "comEvent":{
     "name": "Communication Événementielle",
-    "iconType": "calendar"
+    "iconType": "calendar",
+    "description": "bla bla"
+  },
+  "jilShirt": {
+    "description": "jilshirt description",
+    "link": "https://jilshirt.com"
   }
 }

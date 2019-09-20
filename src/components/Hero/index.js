@@ -43,12 +43,12 @@ function Hero(props) {
                 <Col>
                     <Row type={'flex'} justify={'center'}>
                         <Title style={{textAlign:'center', fontSize:'60px'}}>
-                            Let's move your make
+                            {t('welcome.title')}
                         </Title>
                     </Row> <
                     Row type={'flex'} justify={'center'}>
                         <Paragraph style={{textAlign:'center', fontSize:'16px'}}>
-                            LetLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis lorem.
+                            {t('welcome.description')}
                         </Paragraph>
                     </Row>
                 </Col>

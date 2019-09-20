@@ -16,12 +16,12 @@ function TopAppBar(props) {
         if(isPartiallyCurrent)
             setKey(to);
     })
-    const menu = pMode =>{
+    const menu = () =>{
         return <ResponsiveAntMenu
           mobileMenuContent={isMenuShown =>  <Icon type="menu" rotate={isMenuShown ? 90 : 0}/>}
           menuClassName={'responsive-ant-menu'}
         >
-            {(onLinkClick) =>
+            {() =>
               <Menu
                 selectedKeys={[key]}
                 onClick={handleClick}
@@ -58,7 +58,7 @@ function TopAppBar(props) {
               </Row>
 
               <Row type={'flex'} justify={'center'} align={'middle'}>
-                  {menu('horizontal')}
+                  {menu()}
               </Row>
           </Col>
 

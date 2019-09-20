@@ -1,8 +1,8 @@
 import React from 'react';
-import {Typography} from "antd";
+import { Menu, Typography } from "antd"
 import Feature from "./Feature";
 import BottomParallaxSection from "../ParallaxSection/BottomParallaxSection";
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import { useTranslation } from "react-i18next"
 
 const { Title, Paragraph, Text } = Typography;
@@ -22,7 +22,7 @@ export default (props) => {
   return (
       <BottomParallaxSection title={props.title}
                              paragraph={props.paragraph}
-                             linkButton={props.linkButton}
+                             linkButton={{text:<Link to="/services">{t('learnMore')}</Link> }}
                              background={'white'}
       >
           {

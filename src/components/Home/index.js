@@ -9,6 +9,7 @@ import heroImageFile from "../../static/img/hero.png"
 import jilShirtImageFile from "../../static/img/jilshirt.png"
 import blogImageFile from "../../static/img/blog.png"
 import {Col, Row, Typography} from "antd";
+import { Link } from "gatsby"
 // import Img from 'react-image'
 
 const { Title, Paragraph, Text } = Typography;
@@ -19,7 +20,7 @@ function Home(props) {
         <Hero justify = {'start'}
               title={t('welcome.title', { name: "company-name" })}
               paragraph={t('welcome.intro')}
-              primaryButton={{text: t('contactUs') , link: ""}}
+              primaryButton={{text: t('contactUs') , link: "mailto:someone@yoursite.com"}}
               src={heroImageFile}
         />
         <Features title={t('services.name')}
@@ -28,13 +29,10 @@ function Home(props) {
 
         <Row type={'flex'} align={'space-around'} >
             <Col xl={12}>
-                <BottomParallaxSection title={'Blog'}
-                                       paragraph={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis lorem.' +
-                                       ' Etiam fringilla iaculis ante, id suscipit urna rhoncus ut.' +
-                                       ' Suspendisse elit tellus, vulputate sed placerat nec, sollicitudin sodales tortor.' +
-                                       ' Fusce dignissim, risus ac porta aliquam, ipsum turpis facilisis neque, et rhoncus ante elit a elit.' +
-                                       ' Nam et elit felis. In hac habitasse platea dictumst.'}
-                                       linkButton={{text:t('learnMore'), link: ""}}>
+                <BottomParallaxSection title={t('blog.name')}
+                                       paragraph={t('blog.description')}
+                                       linkButton={{text:<Link to="/blog">{t('learnMore')}</Link> }}
+                >
                     <Col md={14} lg={12}>
                         {/*<Img src={blogImageFile} style={{width:'100%'}}/>*/}
                     </Col>
@@ -42,12 +40,8 @@ function Home(props) {
             </Col>
             <Col xl={12}>
                 <BottomParallaxSection title={'JilShirt'}
-                                       paragraph={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis lorem.' +
-                                       ' Etiam fringilla iaculis ante, id suscipit urna rhoncus ut.' +
-                                       ' Suspendisse elit tellus, vulputate sed placerat nec, sollicitudin sodales tortor.' +
-                                       ' Fusce dignissim, risus ac porta aliquam, ipsum turpis facilisis neque, et rhoncus ante elit a elit.' +
-                                       ' Nam et elit felis. In hac habitasse platea dictumst.'}
-                                       linkButton={{text:t('learnMore'), link: ""}}>
+                                       paragraph={t('jilShirt.description')}
+                                       linkButton={{text:t('learnMore'), link: t('jilShirt.link')}}>
                     <Col md={14} lg={12}>
                         {/*<Img src={jilShirtImageFile} style={{width:'100%'}}/>*/}
                     </Col>
