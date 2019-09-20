@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Layout, Row, Typography} from "antd";
-import Img from 'react-image'
-import darkLogoImageFile from '../../static/img/company-logo-dark.png'
+import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 
 const {Footer} = Layout;
 
@@ -16,14 +16,29 @@ const styles = theme => ({
 });
 const size = 200;
 function FooterDescription(props) {
-    const { classes } = props;
+    const data = useStaticQuery(graphql`
+        query {
+            file(relativePath: { eq: "images/company-logo-dark.png" }) {
+                childImageSharp {
+                    # Specify a fixed image and fragment.
+                    # The default width is 400 pixels
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    `)
     return (
         <Footer style={{background: 'black', paddingBottom: padding, paddingTop: padding}}>
 
             <Row type={'flex'} align={'space-around'} gutter={8}>
                 <Col span={24} md={8}>
                     <Row type={'flex'} align={'center'} justify={'middle'}>
-                        <Img src={darkLogoImageFile} style={{width: '100px', margin: '20px'}}/>
+                        <Img fixed={data.file.childImageSharp.fixed}
+                             fluid={data.file.childImageSharp.fluid}
+                             style={{width:'30%'}}
+                        />
                     </Row>
                 </Col>
                 <Col span={24} md={8}>

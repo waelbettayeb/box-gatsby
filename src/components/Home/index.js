@@ -10,6 +10,9 @@ import jilShirtImageFile from "../../static/img/jilshirt.png"
 import blogImageFile from "../../static/img/blog.png"
 import {Col, Row, Typography} from "antd";
 import { Link } from "gatsby"
+import BlogPresentation from "./BlogPresentation"
+import JilShirtPresentation from "./JilShirtPresentation"
+import FooterDescription from "./FooterDescription"
 // import Img from 'react-image'
 
 const { Title, Paragraph, Text } = Typography;
@@ -28,25 +31,8 @@ function Home(props) {
                   linkButton={{text:t('learnMore'), link: ""}}/>
 
         <Row type={'flex'} align={'space-around'} >
-            <Col xl={12}>
-                <BottomParallaxSection title={t('blog.name')}
-                                       paragraph={t('blog.description')}
-                                       linkButton={{text:<Link to="/blog">{t('learnMore')}</Link> }}
-                >
-                    <Col md={14} lg={12}>
-                        {/*<Img src={blogImageFile} style={{width:'100%'}}/>*/}
-                    </Col>
-                </BottomParallaxSection>
-            </Col>
-            <Col xl={12}>
-                <BottomParallaxSection title={'JilShirt'}
-                                       paragraph={t('jilShirt.description')}
-                                       linkButton={{text:t('learnMore'), link: t('jilShirt.link')}}>
-                    <Col md={14} lg={12}>
-                        {/*<Img src={jilShirtImageFile} style={{width:'100%'}}/>*/}
-                    </Col>
-                </BottomParallaxSection>
-            </Col>
+            <BlogPresentation/>
+            <JilShirtPresentation/>
         </Row>
         <Clients/>
         {/*<Col span={24}>*/}
@@ -65,6 +51,7 @@ function Home(props) {
         {/*        </Col>*/}
         {/*    </Row>*/}
         {/*</Col>*/}
+        <FooterDescription/>
     </div>);
 }
 Home.propTypes = {
