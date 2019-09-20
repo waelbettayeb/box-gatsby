@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-antd',
+    'gatsby-plugin-layout',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
