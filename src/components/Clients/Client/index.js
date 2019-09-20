@@ -15,7 +15,7 @@ const size = 200;
 function Client(props) {
     const { classes } = props;
     return (
-        <Col xs={24} sm={12} lg={6} xl={3} style={{ padding: '20px'}}>
+        <Col xs={24} sm={12} lg={6} xl={4} style={{ padding: '20px'}}>
             <Row type={'flex'} justify={'center'}>
                 <Img fixed={props.fixed} fluid={props.fluid} alt={props.alt} style={{width:'100%'}}/>
             </Row>
