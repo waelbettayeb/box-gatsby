@@ -19,17 +19,7 @@
   },
   "animCom":{
     "name": "Animation commerciale",
-    "iconType": "medium",
-    "description": "bla bla"
-  },
-  "comGlob":{
-    "name": "Communication globale",
-    "iconType": "arrows-alt",
-    "description": "bla bla"
-  },
-  "comMed":{
-    "name": "Communication Media",
-    "iconType": "api",
+    "iconType": "play-square",
     "description": "bla bla"
   },
   "strMarket":{
@@ -45,6 +35,16 @@
   "designEnv":{
     "name": "Design et Environnement",
     "iconType": "edit",
+    "description": "bla bla"
+  },
+  "comGlob":{
+    "name": "Communication globale",
+    "iconType": "global",
+    "description": "bla bla"
+  },
+  "comMed":{
+    "name": "Communication Media",
+    "iconType": "video-camera",
     "description": "bla bla"
   },
   "comEvent":{

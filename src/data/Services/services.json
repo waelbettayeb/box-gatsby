@@ -3,12 +3,6 @@
     "id": "animCom"
   },
    {
-    "id": "comGlob"
-  },
-   {
-    "id": "comMed"
-  },
-   {
     "id": "strMarket"
   },
    {
@@ -16,6 +10,12 @@
   },
    {
     "id": "designEnv"
+  },
+   {
+    "id": "comGlob"
+  },
+   {
+    "id": "comMed"
   },
    {
     "id": "comEvent"
