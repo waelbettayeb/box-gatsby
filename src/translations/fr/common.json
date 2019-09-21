@@ -59,5 +59,8 @@
   "pageNotFound": {
     "title": "Page non trouvée",
     "description": "Oops..."
-  }
+  },
+  "phoneNumber" : "Téléphone",
+  "address" : "Adresse",
+  "links": "Liens"
 }

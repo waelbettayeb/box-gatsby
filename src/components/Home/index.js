@@ -1,19 +1,13 @@
-import React from 'react';
-import Hero from "../Hero";
-import BottomParallaxSection from "../../components/ParallaxSection/BottomParallaxSection";
-import Features from "../../components/Features";
-import {useTranslation} from "react-i18next";
-import PropTypes from "prop-types";
-import Clients from "../Clients";
+import React from "react"
+import Hero from "../Hero"
+import Features from "../../components/Features"
+import { useTranslation } from "react-i18next"
+import PropTypes from "prop-types"
+import Clients from "../Clients"
 import heroImageFile from "../../static/img/hero.png"
-import jilShirtImageFile from "../../static/img/jilshirt.png"
-import blogImageFile from "../../static/img/blog.png"
-import {Col, Row, Typography} from "antd";
-import { Link } from "gatsby"
+import { Row, Typography } from "antd"
 import BlogPresentation from "./BlogPresentation"
 import JilShirtPresentation from "./JilShirtPresentation"
-import FooterDescription from "./FooterDescription"
-// import Img from 'react-image'
 
 const { Title, Paragraph, Text } = Typography;
 
