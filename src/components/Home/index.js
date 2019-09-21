@@ -17,7 +17,7 @@ function Home(props) {
         <Hero justify = {'start'}
               title={t('welcome.title', { name: "company-name" })}
               paragraph={t('welcome.intro')}
-              primaryButton={{text: t('contactUs') , link: "mailto:someone@yoursite.com"}}
+              primaryButton={{text: t('contactUs') , link: "https://blog.class-box.net/contact-us/"}}
               src={heroImageFile}
         />
         <Features title={t('services.name')}
