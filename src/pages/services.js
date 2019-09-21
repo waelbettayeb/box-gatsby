@@ -47,7 +47,7 @@ const ServicesPage = () => {
         </Row>
       </Col>
     </Row>
-
+    <br/>
   </>);
 }
 export const pageQuery = graphql`

@@ -4,6 +4,27 @@ title: "About us"
 type: "AboutUs"
 time: "2019-06-28"
 ---
+# Stratégie de marque : 
+A l’afflux de la créativité vos idée se doivent d’être stratégique ClassBox propose ses trois axes incontournables: 
+- Calcule du ROI (Retour on Investment) et Panification des indicateurs de performance de la stratégie marketing en intégrant tous les types de bénéfices prévus:
+ quantitatifs et qualitatifs. Benchmarker
+garants de l'établissement d'une dynamique de progrès durable.
+- Pilotage optimal de votre plan d’action (recrutement prospection suivi et conseil)
+- Concrétisation effective de votre projet. 
+
+# Expertise digitale
+ClassBox est la somme d’experts et de créatifs réunis spécialisées dans les métiers de la communication, du web et du design graphique, ClassBox ainsi offre toutes les compétences et l’expertise nécessaires à la réalisation de campagnes et de supports de communication remarquables.
+
+# Le sur mesure 
+Chaque formation sur-mesure ClassBox est adaptée à la juste mesure de vos enjeux. 
+Que vous soyez une entreprise ou un particulier nous nous attachons à mettre en œuvre un grand déploiement d’informations
+Pour vous proposer des dispositifs de formation sur-mesure clairement professionnalisant, engageants, innovants,
+Et en prouver l’efficacité.
+
+***
+
+# Qui sommes-nous ?
+
 ## Experts marketing
 Ils sont à l’origine de toute recommandation et c’est grâce à leur travail d’analyse préalable et à leur connaissance des marchés que nous définissons ensuite les meilleures recommandations pour vos projets.
 

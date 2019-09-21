@@ -48,7 +48,7 @@ const AboutUsPage = () => {
         </Row>
       </Col>
     </Row>
-
+    <br/>
   </>);
 }
 

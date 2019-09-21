@@ -7,53 +7,53 @@
   "feature": "Fonctionnalité",
   "welcome": {
     "title": "Let's move your make",
-    "description": "To get started, edit <1><0></0></1> and save to reload."
+    "description": "Une boite de communication multidisciplinaire et cabinet de conseil et de formation."
   },
   "blog": {
     "name": "Blog",
-    "description": "blog description"
+    "description": "Dans notre blog, retrouvez régulièrement des articles sur nos réalisations ou le sujets qui nous sont chers. Ecris par notre équipe ou des experts de leurs domaines, nous espérons que vous pourrez trouver des informations nécessaire."
   },
   "services": {
     "name": "Services",
-    "description": "services description"
+    "description": "ClassBox est la somme d’experts et de créatifs réunis spécialisées dans les métiers de la communication, du web et du design graphique, ClassBox ainsi offre toutes les compétences et l’expertise nécessaires à la réalisation de campagnes et de supports de communication remarquables."
   },
   "animCom":{
     "name": "Animation commerciale",
     "iconType": "play-square",
-    "description": "bla bla"
+    "description": "L’investissement et la capacité novatrice de notre équipe apporteront une plus-value conséquente à vos démarches commerciales en vous assurant l'accomplissement des paramètres incontournables du sucée de vos produits."
   },
   "strMarket":{
     "name": "Stratégie Marketing",
     "iconType": "like",
-    "description": "bla bla"
+    "description": "ClassBox et ses spécialistes du marketing vous proposent des solutions innovantes et vous accompagne dans l’élaboration, le renouvellement ou le renforcement de votre stratégie marketing opérationnel et de communication "
   },
   "webApp":{
     "name": "Web et Applications",
     "iconType": "code",
-    "description": "bla bla"
+    "description": "ClassBox et son équipe d'experts Web et de Développeurs conçoit et développe pour les sociétés des applications web et mobile et des contenus web"
   },
   "designEnv":{
     "name": "Design et Environnement",
     "iconType": "edit",
-    "description": "bla bla"
+    "description": "L'aménagement et l'agencement spatial sont la première impression véhiculée. De là, ils doivent correspondre à l’image que vous souhaitez véhiculer auprès de vos visiteurs."
   },
   "comGlob":{
     "name": "Communication globale",
     "iconType": "global",
-    "description": "bla bla"
+    "description": "Pour que votre communication soit comprise, ClassBox mobilise ses compétences stratégiques et créatives, en combinant l'ensemble des solutions de communication actuelles."
   },
   "comMed":{
     "name": "Communication Media",
     "iconType": "video-camera",
-    "description": "bla bla"
+    "description": "L’agence ClassBox propose des prestations en cohérence avec vos attentes sous forme de services personnalisés."
   },
   "comEvent":{
     "name": "Communication Événementielle",
     "iconType": "calendar",
-    "description": "bla bla"
+    "description": "Afin d’accroître vos chances de séduire et de convaincre vos cibles ClassBox met un poing d’honneur à proposer les dernières tendances et innovations"
   },
   "jilShirt": {
-    "description": "jilshirt description",
+    "description": "Jil Shirt est le meilleur magasin pour  l'impression de T-shirts qui s'adapte à toutes vos exigences.",
     "link": "https://jilshirt.com"
   },
   "pageNotFound": {
