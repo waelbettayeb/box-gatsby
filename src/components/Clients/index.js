@@ -29,7 +29,7 @@ function Clients(props) {
       {data.allFile.edges.map(({node}) => (
         <Client fixed={node.childImageSharp.fixed}
                 fluid={node.childImageSharp.fluid}
-                alt="Gatsby Docs are awesome"
+                alt="clients"
         />
         ))}
     </BottomParallaxSection>

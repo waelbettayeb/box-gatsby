@@ -24,7 +24,7 @@ const ServicesPage = () => {
   `)
   console.log("data", data)
   return(<>
-    <SEO title={t('aboutUs')} />
+    <SEO title={t('services.name')} />
     <Row type={'flex'} justify={'center'}>
       <Col xl={12}>
         <Row type={'flex'} justify={'center'}>

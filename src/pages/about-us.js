@@ -33,7 +33,7 @@ const AboutUsPage = () => {
         </Row>
         <Row type={'flex'} justify={'center'}>
           <Title style={{textAlign:'center', margin:"20px"}} level={"3"}>
-            {t('about')}
+            {t('aboutUs')}
           </Title>
         </Row>
         <Row type={'flex'} justify={'center'}>
