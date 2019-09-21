@@ -19,6 +19,9 @@ const AboutUsPage = () => {
                   }
               }
           }
+          markdownRemark(frontmatter: {title: {eq: "About us"}}) {
+              html
+          }
       }
   `)
   return(<>
@@ -34,9 +37,14 @@ const AboutUsPage = () => {
           </Title>
         </Row>
         <Row type={'flex'} justify={'center'}>
-          <Paragraph style={{textAlign:'center'}}>
-            {t('pageNotFound.description')}
-          </Paragraph>
+          <div className="blog-post-container">
+            <div className="blog-post">
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+              />
+            </div>
+          </div>
         </Row>
       </Col>
     </Row>

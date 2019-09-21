@@ -52,7 +52,6 @@ function Home(props) {
         {/*        </Col>*/}
         {/*    </Row>*/}
         {/*</Col>*/}
-        <FooterDescription/>
     </div>);
 }
 Home.propTypes = {

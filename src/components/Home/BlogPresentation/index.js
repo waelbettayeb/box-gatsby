@@ -24,7 +24,7 @@ function BlogPresentation(props) {
         <Col xl={12}>
             <BottomParallaxSection title={t('blog.name')}
                                    paragraph={t('blog.description')}
-                                   linkButton={{text:<Link to="/blog">{t('learnMore')}</Link> }}
+                                   linkButton={{text:t('learnMore'), link: "https://blog.class-box.net"}}
             >
                 <Col md={14} lg={12}>
                     <Img fixed={data.file.childImageSharp.fixed} fluid={data.file.childImageSharp.fluid}  style={{width:'100%'}}/>

@@ -12,15 +12,17 @@ const ServicesPage = () => {
       query {
           file(relativePath: { eq: "images/services.png" }) {
               childImageSharp {
-                  # Specify a fixed image and fragment.
-                  # The default width is 400 pixels
                   fluid {
                       ...GatsbyImageSharpFluid
                   }
               }
           }
+          markdownRemark(frontmatter: {title: {eq: "Services"}}) {
+              html
+          }
       }
   `)
+  console.log("data", data)
   return(<>
     <SEO title={t('aboutUs')} />
     <Row type={'flex'} justify={'center'}>
@@ -29,20 +31,34 @@ const ServicesPage = () => {
           <Img fixed={data.file.childImageSharp.fixed} fluid={data.file.childImageSharp.fluid}  style={{width:'100%'}}/>
         </Row>
         <Row type={'flex'} justify={'center'}>
-          <Title style={{textAlign:'center', margin:"20px"}} level={"3"}>
+          <Title style={{textAlign:'center', margin:"20px"}} level={1}>
             {t('services.name')}
           </Title>
         </Row>
         <Row type={'flex'} justify={'center'}>
-          <Paragraph style={{textAlign:'center'}}>
-            {t('pageNotFound.description')}
-          </Paragraph>
+          <div className="blog-post-container">
+            <div className="blog-post">
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+              />
+            </div>
+          </div>
         </Row>
       </Col>
     </Row>
 
   </>);
 }
+export const pageQuery = graphql`
+    query {
+        file(relativePath: {eq: "pages/services.md"}) {
+            childMarkdownRemark {
+                html
+            }
+        }
+    }
 
+`
 
 export default ServicesPage

@@ -5,6 +5,7 @@ module.exports = {
     author: `Wael Mohamed Khelil`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
     'gatsby-plugin-antd',
     'gatsby-plugin-layout',

@@ -12,6 +12,7 @@ import i18next from "i18next";
 import {initReactI18next} from "react-i18next";
 import common_fr from "../translations/fr/common.json";
 import common_en from "../translations/en/common.json";
+import FooterDescription from "../components/Home/FooterDescription"
 
 const Index = ({ children }) => {
   i18next
@@ -33,6 +34,7 @@ const Index = ({ children }) => {
     <>
       <TopAppBar/>
       {children}
+      <FooterDescription/>
     </>
   )
 }

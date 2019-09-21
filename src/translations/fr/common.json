@@ -1,6 +1,10 @@
 {
   "home": "Accueil",
   "about": "À propos de nous",
+  "contactUs": "Contactez-nous",
+  "learnMore": "En savoir plus",
+  "whoTrustUs": "Qui nous fait confiance",
+  "feature": "Fonctionnalité",
   "welcome": {
     "title": "Let's move your make",
     "description": "To get started, edit <1><0></0></1> and save to reload."
@@ -9,10 +13,6 @@
     "name": "Blog",
     "description": "blog description"
   },
-  "contactUs": "Contactez-nous",
-  "learnMore": "En savoir plus",
-  "whoTrustUs": "Qui nous fait confiance",
-  "feature": "Fonctionnalité",
   "services": {
     "name": "Services",
     "description": "services description"

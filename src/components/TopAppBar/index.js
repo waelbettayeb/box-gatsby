@@ -37,9 +37,6 @@ function TopAppBar(props) {
                   <Menu.Item key="/about-us">{t('about')}
                       <Link to="/about-us" getProps={isPartiallyActive("/about-us")} {...props}/>
                   </Menu.Item>
-                  <Menu.Item key="/blog">{t('blog.name')}
-                      <Link to="/blog" getProps={isPartiallyActive("/blog")} {...props}/>
-                  </Menu.Item>
               </Menu>
             }
         </ResponsiveAntMenu>
