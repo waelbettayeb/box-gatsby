@@ -23,8 +23,6 @@ function FooterDescription(props) {
         query {
             file(relativePath: { eq: "images/company-logo-dark.png" }) {
                 childImageSharp {
-                    # Specify a fixed image and fragment.
-                    # The default width is 400 pixels
                     fluid {
                         ...GatsbyImageSharpFluid
                     }
@@ -39,7 +37,7 @@ function FooterDescription(props) {
               <Row type={'flex'} align={'space-around'} gutter={8}>
                   <Col span={24} md={6}>
                       <Row type={'flex'} align={'center'} justify={'middle'}>
-                          <Img fixed={data.file.childImageSharp.fixed}
+                          <Img 
                                fluid={data.file.childImageSharp.fluid}
                                style={{width:'30%'}}
                           />
