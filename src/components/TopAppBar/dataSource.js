@@ -14,125 +14,21 @@ export const dataSource = {
     className: 'header3-menu',
     children: [
       {
-        name: 'item0',
+        name: 'home',
         className: 'header3-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航一', name: 'text' }],
-        },
-        subItem: [
-          {
-            name: 'sub0',
-            className: 'item-sub',
-            children: {
-              className: 'item-sub-item',
-              children: [
-                {
-                  name: 'image0',
-                  className: 'item-image',
-                  children:
-                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                },
-                {
-                  name: 'title',
-                  className: 'item-title',
-                  children: 'Ant Design',
-                },
-                {
-                  name: 'content',
-                  className: 'item-content',
-                  children: '企业级 UI 设计体系',
-                },
-              ],
-            },
-          },
-          {
-            name: 'sub1',
-            className: 'item-sub',
-            children: {
-              className: 'item-sub-item',
-              children: [
-                {
-                  name: 'image0',
-                  className: 'item-image',
-                  children:
-                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                },
-                {
-                  name: 'title',
-                  className: 'item-title',
-                  children: 'Ant Design',
-                },
-                {
-                  name: 'content',
-                  className: 'item-content',
-                  children: '企业级 UI 设计体系',
-                },
-              ],
-            },
-          },
-        ],
+        key: '/',
       },
       {
-        name: 'item1',
+        name: 'services',
         className: 'header3-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航二', name: 'text' }],
-        },
+          key: '/services',
       },
       {
-        name: 'item2',
+        name: 'aboutUs',
         className: 'header3-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航三', name: 'text' }],
-        },
-      },
-      {
-        name: 'item3',
-        className: 'header3-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航四', name: 'text' }],
-        },
+          key: '/about-us',
       },
     ],
   },
   mobileMenu: { className: 'header3-mobile-menu' },
-};
-export const Banner50DataSource = {
-  wrapper: { className: 'home-page-wrapper banner5' },
-  page: { className: 'home-page banner5-page' },
-  childWrapper: {
-    className: 'banner5-title-wrapper',
-    children: [
-      { name: 'title', children: '产品名', className: 'banner5-title' },
-      {
-        name: 'explain',
-        className: 'banner5-explain',
-        children: '产品标语介绍',
-      },
-      {
-        name: 'content',
-        className: 'banner5-content',
-        children: '产品的详细说明，如是什么东西之类的文字',
-      },
-      {
-        name: 'button',
-        className: 'banner5-button-wrapper',
-        children: {
-          href: '#',
-          className: 'banner5-button',
-          type: 'primary',
-          children: '开始使用',
-        },
-      },
-    ],
-  },
-  image: {
-    className: 'banner5-image',
-    children:
-      'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*-wAhRYnWQscAAAAAAAAAAABkARQnAQ',
-  },
 };

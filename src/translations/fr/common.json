@@ -1,6 +1,10 @@
 {
-  "home": "Accueil",
-  "aboutUs": "À propos de nous",
+  "home": {
+    "name": "Accueil"
+  },
+  "aboutUs": {
+    "name": "À propos de nous"
+  },
   "contactUs": "Contactez-nous",
   "learnMore": "En savoir plus",
   "whoTrustUs": "Qui nous fait confiance",
