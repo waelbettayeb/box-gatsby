@@ -26,7 +26,7 @@ const ServicesPage = () => {
   return(<>
     <SEO title={t('services.name')} />
     <Row type={'flex'} justify={'center'}>
-      <Col xl={12}>
+      <Col xs={20} xl={12}>
         <Row type={'flex'} justify={'center'}>
           <Img fixed={data.file.childImageSharp.fixed} fluid={data.file.childImageSharp.fluid}  style={{width:'100%'}}/>
         </Row>

@@ -25,15 +25,15 @@ const AboutUsPage = () => {
       }
   `)
   return(<>
-    <SEO title={t('aboutUs')} />
+    <SEO title={t('aboutUs.name')} />
     <Row type={'flex'} justify={'center'}>
-      <Col xl={12}>
+      <Col xs={20} xl={12}>
         <Row type={'flex'} justify={'center'}>
           <Img fixed={data.file.childImageSharp.fixed} fluid={data.file.childImageSharp.fluid}  style={{width:'100%'}}/>
         </Row>
         <Row type={'flex'} justify={'center'}>
           <Title style={{textAlign:'center', margin:"20px"}} level={"3"}>
-            {t('aboutUs')}
+            {t('aboutUs.name')}
           </Title>
         </Row>
         <Row type={'flex'} justify={'center'}>
