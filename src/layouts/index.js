@@ -8,36 +8,21 @@
 import React from "react"
 import PropTypes from "prop-types"
 import TopAppBar from "../components/TopAppBar"
-import i18next from "i18next";
-import {initReactI18next} from "react-i18next";
-import common_fr from "../translations/fr/common.json";
-import common_en from "../translations/en/common.json";
 import FooterDescription from "../components/FooterDescription"
 import { enquireScreen } from 'enquire-js';
+import './i18n';
 
-const Index = ({ children }) => {
-  i18next
-    .use(initReactI18next)
-    .init({
-      fallbackLng: 'fr',
-      interpolation: { escapeValue: false },  // React already does escaping
-      lng: 'fr',                              // language to use
-      resources: {
-        en: {
-          common: common_en               // 'common' is our custom namespace
-        },
-        fr: {
-          common: common_fr
-        },
-      },
-    });
-  return (
-    <>
+class Index extends React.Component{
+
+
+  render() {
+    return(
+    <React.Fragment>
       <TopAppBar/>
-      {children}
+      {this.props.children}
       <FooterDescription/>
-    </>
-  )
+    </React.Fragment>
+    )}
 }
 
 Index.propTypes = {
