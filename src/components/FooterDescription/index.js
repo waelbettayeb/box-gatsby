@@ -99,7 +99,7 @@ function FooterDescription(props) {
           <Row type={'flex'} align={'center'} style={{background:'black'}}>
               <Text style={{color:'white'}}>
                   Made with ♥ by &nbsp;
-                  <a href={"https://github.com/WaelMohamedKhelil"}>Wael
+                  <a href={"https://github.com/wael-mohamed"}>Wael
                   </a>
               </Text>
           </Row>

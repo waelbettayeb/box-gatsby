@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `ClassBox Agency`,
     description: `Une boite de communication multidisciplinaire et cabinet de conseil et de formation`,
-    author: `Wael Mohamed KHELIL`,
+    author: `Wael Mohamed BETTAYEB`,
   },
   plugins: [
     `gatsby-transformer-remark`,
