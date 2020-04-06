@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button, Col, Icon, Layout, Row, Typography } from "antd"
+import { Button, Col, Layout, Row, Typography } from "antd"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { useTranslation } from "react-i18next"
+import Icon from "../Icon/Icon"
 
 const {Footer} = Layout;
 
@@ -87,9 +88,15 @@ function FooterDescription(props) {
                                   </Paragraph>
                               </Row>
                               <Row>
-                                  <Button style={{margin:"5px"}} shape={'circle'} icon="facebook" href={"https://www.facebook.com/classbox.agency/"}/>
-                                  <Button style={{margin:"5px"}} shape={'circle'} icon="instagram" href={"https://www.instagram.com/classboxagency/"}/>
-                                  <Button style={{margin:"5px"}} shape={'circle'} icon="linkedin" href={"https://www.linkedin.com/company/20497683"}/>
+                                  <Button type="link" style={{margin:"5px"}} shape={'circle'}
+                                          icon={<Icon iconType={"facebook"}/>}
+                                          href={"https://www.facebook.com/classbox.agency/"}/>
+                                  <Button type="link" style={{margin:"5px"}} shape={'circle'}
+                                          icon={<Icon iconType={"instagram"}/>}
+                                          href={"https://www.instagram.com/classboxagency/"}/>
+                                  <Button type="link" style={{margin:"5px"}} shape={'circle'}
+                                          icon={<Icon iconType={"linkedin"}/>}
+                                          href={"https://www.linkedin.com/company/20497683"}/>
                               </Row>
                           </Col>
                       </Row>

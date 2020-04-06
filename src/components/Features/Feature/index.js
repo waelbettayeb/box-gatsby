@@ -1,7 +1,8 @@
 import React from 'react';
-import {Button, Col, Icon, Row, Typography} from "antd";
+import {Button, Col, Row, Typography} from "antd";
 import {useTranslation} from "react-i18next";
 import featureStyles from "./feature.module.css"
+import Icon from "../../Icon/Icon"
 
 const { Title, Paragraph, Text } = Typography;
 const padding = 30;
@@ -19,7 +20,7 @@ function Feature(props) {
   return (
     <Col className={featureStyles.container} xs={24} sm={12} md={8} lg={6} style={{ padding: '20px'}}>
       <Row type={'flex'} justify={'center'}>
-        <Icon className={featureStyles.icon} type={props.iconType}  style={{ padding: '20px', fontSize: '60px' }}/>
+        <Icon className={featureStyles.icon} iconType={props.iconType}  style={{ padding: '20px', fontSize: '60px' }}/>
       </Row>
       <Row type={'flex'} justify={'center'}>
         <Title level={4} style={{ textAlign:'center' }}>
