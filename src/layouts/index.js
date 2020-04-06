@@ -12,9 +12,21 @@ import FooterDescription from "../components/FooterDescription"
 import { enquireScreen } from 'enquire-js';
 import './i18n';
 
+let isMobile;
+enquireScreen((b) => {
+  isMobile = b;
+});
+
+const { location } = window;
+
 class Index extends React.Component{
-
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMobile,
+      show: !location.port, // 如果不是 dva 2.0 请删除
+    };
+  }
   render() {
     return(
     <React.Fragment>
