@@ -1,11 +1,16 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
-import { Menu } from 'antd';
+import { Menu, Row } from "antd"
 import { getChildrenToRender } from './utils';
+import { dataSource } from './dataSource'
+import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
+import CompanyImage from "./CompanyImage"
+import './less/nav3.less'
 
 const { Item, SubMenu } = Menu;
 
-class Header3 extends React.Component {
+class NavigationMenu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,7 +26,7 @@ class Header3 extends React.Component {
   };
 
   render() {
-    const { dataSource, isMobile, ...props } = this.props;
+    const { isMobile, ...props } = this.props;
     const { phoneOpen } = this.state;
     const navData = dataSource.Menu.children;
     const navChildren = navData.map((item) => {
@@ -85,8 +90,9 @@ class Header3 extends React.Component {
             animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
             {...dataSource.logo}
           >
-            <img width="100%" src={dataSource.logo.children} alt="img" />
-          </TweenOne>
+            <CompanyImage/>
+
+                   </TweenOne>
           {isMobile && (
             <div
               {...dataSource.mobileMenu}
@@ -133,4 +139,4 @@ class Header3 extends React.Component {
   }
 }
 
-export default Header3;
+export default NavigationMenu;

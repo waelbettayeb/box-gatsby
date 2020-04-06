@@ -27,10 +27,29 @@ class Index extends React.Component{
       show: !location.port, // 如果不是 dva 2.0 请删除
     };
   }
+
+  componentDidMount() {
+    enquireScreen((b) => {
+      this.setState({ isMobile: !!b });
+    });
+
+    if (location.port) {
+      setTimeout(() => {
+        this.setState({
+          show: true,
+        });
+      }, 500);
+    }
+  }
+
   render() {
     return(
     <React.Fragment>
-      <TopAppBar/>
+      <TopAppBar
+        id="Nav3_0"
+        key="Nav3_0"
+        isMobile={this.state.isMobile}
+      />
       {this.props.children}
       <FooterDescription/>
     </React.Fragment>

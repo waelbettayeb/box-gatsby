@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next"
 import ResponsiveAntMenu from "../ResponsiveMenu"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import NavigationMenu from "./NavigationMenu"
 
 function TopAppBar(props) {
     const { t } = useTranslation('common');
@@ -77,4 +78,4 @@ console.log(data)
     );
 
 }
-export default(TopAppBar);
+export default(NavigationMenu);
