@@ -32,13 +32,12 @@ class Index extends React.Component{
       this.setState({ isMobile: !!b });
     });
 
-    if (location.port) {
       setTimeout(() => {
         this.setState({
           show: true,
         });
       }, 500);
-    }
+    
   }
 
   render() {
